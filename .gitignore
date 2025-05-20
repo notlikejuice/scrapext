@@ -1,0 +1,26 @@
+# Środowiska wirtualne
+venv/
+env/
+.venv/
+ENV/
+./venv
+# Pliki cache Pythona
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Pliki konfiguracyjne edytorów
+.vscode/
+.idea/
+
+# Pliki systemowe
+.DS_Store
+Thumbs.db
+
+# Pliki logów
+*.log
+
+# Pliki testowe
+.coverage
+htmlcov/
+.tox/
