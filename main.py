@@ -24,9 +24,17 @@ class ItemDetails(BaseModel):
     status: str
 
 
-@app.get("/item{id}")
-def read_item(item: ItemDetails):
-    return item
+@app.get("/item/{item_id}")
+def read_item(item_id: int):
+    # Return a mock item for demonstration
+    return {
+        "item_id": item_id,
+        "brand": "Example Brand",
+        "catalog": 12345,
+        "price": 99.99,
+        "size": 42,
+        "status": "available"
+    }
 
 @app.post("/vinted/items")
 def create_item(item: ItemDetails):
